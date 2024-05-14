@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+
+    <ImageView
+        android:id="@+id/profileIV"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        app:layout_constraintBottom_toTopOf="@id/textName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/account_circle_24dp_fill0_wght400_grad0_opsz24" />
+
+    <TextView
+        android:id="@+id/textName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="16dp"
+        android:text="Oleg Paustovsky"
+        android:textColor="@color/text"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/actionList"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profileIV" />
+
+    <LinearLayout
+        android:id="@+id/actionList"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/numberList"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textName">
+
+        <TextView
+            android:id="@+id/actionOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/call32"
+            android:drawablePadding="6dp"
+            android:gravity="center_horizontal"
+            android:paddingVertical="8dp"
+            android:textSize="16sp"
+            android:text="Call" />
+
+        <TextView
+            android:id="@+id/actionTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/sms32"
+            android:drawablePadding="6dp"
+            android:gravity="center_horizontal"
+            android:paddingVertical="8dp"
+            android:textSize="16sp"
+            android:text="Sms" />
+
+        <TextView
+            android:id="@+id/actionThree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/favorite_24dp_fill0_wght400_grad0_opsz24"
+            android:drawablePadding="6dp"
+            android:gravity="center_horizontal"
+            android:paddingVertical="8dp"
+            android:text="Favorite"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/numberList"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_rounded"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@id/actionList">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Contact info"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/call_24dp_fill0_wght400_grad0_opsz24"
+            android:drawableEnd="@drawable/sms_24dp_fill0_wght400_grad0_opsz24"
+            android:drawablePadding="8dp"
+            android:padding="16dp"
+            android:text="+7 800 123-45-67" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/call_24dp_fill0_wght400_grad0_opsz24"
+            android:drawableEnd="@drawable/sms_24dp_fill0_wght400_grad0_opsz24"
+            android:drawablePadding="8dp"
+            android:padding="16dp"
+            android:text="+7 800 123-45-67" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/call_24dp_fill0_wght400_grad0_opsz24"
+            android:drawableEnd="@drawable/sms_24dp_fill0_wght400_grad0_opsz24"
+            android:drawablePadding="8dp"
+            android:padding="16dp"
+            android:text="+7 800 123-45-67" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
